@@ -1,0 +1,80 @@
+@media only screen and (max-width: 650px){
+    .nav{
+        height: 60px;
+    }
+    .navigationbar{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0px;
+        align-content: center;
+    }
+    .navigation{
+        position: relative;
+        display: flex;
+        height:fit-content;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .navigationmenu{
+        display:block;
+    }
+    .visible-action{
+        opacity: 0;
+        height: 0px;
+    }
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    .navigation ul li{
+        width: inherit;
+    }
+    .navigation ul li a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 50px;
+        text-align: center;
+        flex-wrap: nowrap;
+        align-content: space-between;
+    }
+    .indicator{
+        height: 50px;
+        width: inherit;
+        border-top-right-radius: 0%;
+        border-top-left-radius: 0%;
+        border: 2px sollid #24252A ;
+        border-color: #24252A;
+    }
+    .indicator::before{
+        display: none;
+    }
+    .indicator::after{
+        display: none;
+    }
+    .navigation ul li:nth-child(1).active ~ .indicator
+    {
+        transform: translateY(calc(50px * 0));  
+    }
+    .navigation ul li:nth-child(2).active ~ .indicator
+    {
+        transform: translateY(calc(50px * 1));
+    }
+    .navigation ul li:nth-child(3).active ~ .indicator
+    {
+        transform: translateY(calc(50px * 2));
+    }
+    .navigation ul li:nth-child(4).active ~ .indicator
+    {
+        transform: translateY(calc(50px * 3));
+    }
+}
