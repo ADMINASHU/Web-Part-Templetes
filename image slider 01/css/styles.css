@@ -4,5 +4,35 @@
     margin: 0;
     padding: 0;
 }
-
-
+.banner{
+    max-width: 1200px;
+    height: auto;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+#slider{
+    width: 100%;
+    display: inline-flex;
+    transition: 0.7s;
+}
+#slider img{
+    width: 100%;
+}
+.indicators{
+    position:absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+} 
+.indicators span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.active{
+    background: white !important;
+}

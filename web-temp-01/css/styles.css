@@ -14,6 +14,13 @@ li, a{
     color: #edf0f1;
     text-decoration: none;
 }
+.text{
+    justify-content: center;
+    color: white;
+}
+.text:hover{  
+ text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+}
 .nav{
     position:sticky;
     top: 0px;
@@ -49,14 +56,18 @@ li, a{
     margin: 0px 0px 0px 10px;
     justify-content: center;
 }
-/* .logo:hover{
-    transform:rotate3d(180);  
-} */
+.logo:hover{
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+}
 .logotext{
     cursor: pointer;
     font-size: 45px;
     color: #edf0f1;
     margin: 0px 10px 0px 10px;    
+}
+.logotext:hover{
+    text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+
 }
 .navigation{
     position: relative;
@@ -115,7 +126,6 @@ li, a{
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     border: 2px solid white ;
-    /* transition: 0.5s; */
     transition: all 0.5s ease 0s;
 }
 .indicator::before{
