@@ -5,18 +5,18 @@
     padding: 0;
 }
 .board{
-    background-color: #24252A;
+    background-color: hsl(230, 8%, 15%);
 }
 li, a{
     font-family: "Montserraat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
 }
 .text{
     justify-content: center;
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 .text:hover{  
  text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
@@ -62,7 +62,7 @@ li, a{
 .logotext{
     cursor: pointer;
     font-size: 45px;
-    color: #edf0f1;
+    color: hsl(0, 0%, 100%);
     margin: 0px 10px 0px 10px;    
 }
 .logotext:hover{
