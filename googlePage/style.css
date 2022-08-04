@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;    
 }
+:root{
+    --borderColor: hsl(240, 0%, 90%);
+}
 .body{
     /* font-family: arial, sans-serif; */
     /* display: flex; */
@@ -82,7 +85,7 @@ img{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 60%;
+    /* width: 700px; */
     /* height: auto; */
     justify-content: space-evenly;
     align-items: center;
@@ -92,7 +95,10 @@ img{
     display: flex;
     height: 44px;
     margin: 20px 15px 20px 15px;
-    
+    border-radius: 50vmax;
+    border: 1px solid var(--borderColor);
+    width: 600px;
+    /* background-color: red; */
 }
 .searchIcon{
     display: flex;
@@ -100,31 +106,41 @@ img{
     align-items: center;
     height: inherit;
     width: 40px;
-    border-left: 1px solid hsl(223, 4%, 38%);;
-    border-top: 1px solid hsl(223, 4%, 38%);;
-    border-bottom: 1px solid hsl(223, 4%, 38%);;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+    /* border-left: 1px solid var(--borderColor);
+    border-top: 1px solid var(--borderColor);
+    border-bottom: 1px solid var(--borderColor); */
+    /* border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%; */
     /* background-color: rgb(204, 66, 204); */
 }
 .searchIcon img{
     padding-left: 5px;
-    width: 15px;
-    color: hsl(223, 4%, 38%);
+    width: 20px;
+    opacity: 50%;
 }
+
 
 .searchArea{
     cursor:text;
     height: inherit;
     display: flex;
-    border-top: 1px solid hsl(223, 4%, 38%);;
-    border-bottom: 1px solid hsl(223, 4%, 38%);;
+    /* border-top: 1px solid var(--borderColor);
+    border-bottom: 1px solid var(--borderColor); */
     
 }
 #inputField{
-    width: 450px;
-    z-index: -1; // hover use
+    
+    width: 520px;
+    font-size: 15px;
+    /* z-index: -1; // hover use */
+    background-color: transparent;
+    border: none;
+    border-color: transparent;
+    outline: none;
+    font-family: arial, sans-serif;
+    color: hsl(0, 5%, 13%);
 }
+
 .crossIcon{
     display: flex;
     cursor:text;
@@ -132,19 +148,20 @@ img{
     justify-content: center;
     align-items: center;
     height: inherit;
-    width: 40px;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-right: 1px solid hsl(223, 4%, 38%);;
-    border-top: 1px solid hsl(223, 4%, 38%);;
-    border-bottom: 1px solid hsl(223, 4%, 38%);;
-    /* background-color: rgb(204, 66, 204); */
+    width: 40px; 
+}
+.active .icon{
+    display: block;
+}
+.searchBar:hover{
+    box-shadow: 0px 1px 6px 0px hsla(225, 6%, 13%, 0.28);
 }
 .crossIcon img{
-    display: none; // hover focus
-    padding-right: 5px;
-    width: 15px;
-    color: hsl(223, 4%, 38%);
+    display: none; 
+    padding-right: 10px;
+    width: 20px;
+    opacity: 70%;
+    cursor: pointer;
 }
 .buttonArea{
     
@@ -171,7 +188,7 @@ img{
 }
 .button:hover{
     cursor: pointer;
-    /* box-shadow:; */
+    box-shadow: 0px 1px 6px 0px hsla(225, 6%, 13%, 0.28);
 }
 span{
     /* width: 200px; */
@@ -233,7 +250,7 @@ span{
     align-items: center;
     font-size: 13.5px;
     height: 50%;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 @media only screen and (max-width: 1200px){
     .bottom{
